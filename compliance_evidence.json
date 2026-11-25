@@ -1,0 +1,30 @@
+{
+    "timestamp_utc": "2026-11-25T14:29:03.139757+00:00",
+    "hostname": "Kai",
+    "checks": [
+        {
+            "target": "/etc/passwd",
+            "expected": "644",
+            "actual": "644",
+            "status": "PASS"
+        },
+        {
+            "target": "/etc/shadow",
+            "expected": "640",
+            "actual": "640",
+            "status": "PASS"
+        },
+        {
+            "target": "test_secret.conf",
+            "expected": "600",
+            "actual": "600",
+            "status": "PASS"
+        },
+        {
+            "target": "PermitRootLogin",
+            "expected": "no",
+            "actual": "unset",
+            "status": "FAIL - Drift Detected"
+        }
+    ]
+}
